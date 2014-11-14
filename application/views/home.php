@@ -3,8 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<style type="text/css">
+.imagen
+{
+	position: relative;
+	width: 100%;
+	height: 300px;
+	margin-right: auto
+}
+	</style>
 </head>
 <body>
-	<div><img src="../images/head.jpg" alt=""></div>
+	<div class"imagen">
+		<img class="imagen" src="../images/head.jpg" alt="">
+	</div>
 </body>
 </html>
