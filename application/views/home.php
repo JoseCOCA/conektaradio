@@ -4,18 +4,24 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style type="text/css">
+body
+{
+	width: 100%;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+    
+}
 .imagen
 {
-	position: relative;
 	width: 100%;
 	height: 300px;
-	margin-right: auto
 }
 	</style>
 </head>
 <body>
-	<div class"imagen">
-		<img class="imagen" src="../images/head.jpg" alt="">
+	<div><img class="imagen" src="../images/head.jpg" alt="">
 	</div>
 </body>
 </html>
