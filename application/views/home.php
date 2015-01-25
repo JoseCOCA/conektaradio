@@ -29,6 +29,17 @@
 	    	</div>
 	    	
 	    </div>
+	    <div class="videos">
+	    	<img src="images/VideosHead.png" alt="">
+	    </div>
+	    <div class="musica">
+	    	<img id="musicaNueva" src="images/headMN.png" alt="">
+	    	<div class="mnPrin">
+		    	<div id="mnPrin">
+					<a href=""><img src="images/MNprincipal.png" alt=""></a>	    		
+		    	</div>
+	    	</div>
+	    </div>
 	</section>
     <section class="anuncios">
     	<div class="redes">
@@ -36,16 +47,16 @@
     		<img src="images/facebook.png" alt="">
     		<img src="images/youTube.png" alt="">
     	</div>
-    	<div id="chat">
+    	<div id="chat" class="anun-1">
     		<img src="images/chat.png" alt="">
     	</div>
-    	<div id="comenta">
+    	<div id="comenta" class="anun-1" >
     		<a href=""><img src="images/comentarios.png" alt=""></a>
     	</div>
-    	<div id="anunciate"> 
+    	<div id="anunciate" class="anun-1"> 
     		<a href=""><img src="images/anunciate.png" alt=""></a>
     	</div>
-    	<div id="eventos">
+    	<div id="eventos" class="anun-1">
     		<a href=""><img src="images/eventos.png" alt=""></a>
     	</div>
     </section>

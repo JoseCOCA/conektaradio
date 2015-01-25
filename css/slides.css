@@ -1,12 +1,17 @@
 .pika-thumbs li{width: 144px; height:74px;}
-.pika-stage {height: 250px;}
+.pika-stage {/*height: 250px;*/}
 
 
 body{font-family: sans-serif;}
+
 a{color:white;}
 .pikachoose {width: 500px; margin: 0 auto;}
 .pika-stage {position: relative;
 }
+
+/*#pikame ul{
+	margin-top: 20px;
+}*/
 	
 	/*if you change the padding on pika-stage you must adjust the top left of this to match! */
 	.pika-stage .main-image {position: absolute; top: 0px; left: 0px;}
@@ -31,7 +36,7 @@ a{color:white;}
 
 .pika-textnav {display:none;}
 	
-.pika-thumbs {margin: 10px 0 0 17px; padding: 0;}
+.pika-thumbs {margin: 10px 0 0 17px !important; padding: 0;}
 	.pika-thumbs li {float: left; list-style-type: none;margin: 0 5px; cursor: pointer;}
 
 		.pika-thumbs li:last {margin: 0;}

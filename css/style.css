@@ -61,6 +61,26 @@ body
 	width: 90%;
 }
 
+/*videos*/
+.videos{
+	background-color: #000000;
+	float: left;
+	margin-top: 20px;
+}
+/*musica nueva*/
+
+#musicaNueva{
+	position: relative;
+	top: 15px;
+	z-index: 8;
+	left: 20px;
+}
+
+.mnPrin{
+	position: relative;
+	top: -46px;
+	left: 20px;
+}
 /*SECCION ANUNCIOS*/
 .anuncios{
 	background: red;
@@ -69,7 +89,13 @@ body
 	margin: 0 auto;
 	text-align: center;
 }
-
+.anun-1 img
+{
+	width: 100%;
+}
+.redes{
+	margin-top: 20px;
+}
 /*SLOGAN*/
 
 .slogan img{
