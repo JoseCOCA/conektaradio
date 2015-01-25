@@ -37,8 +37,12 @@
 	    	<div class="mnPrin">
 		    	<div id="mnPrin">
 					<a href=""><img src="images/MNprincipal.png" alt=""></a>	    		
+	    			<img id="MNotros" src="images/MNotros.png" alt="">
 		    	</div>
 	    	</div>
+	    </div>
+	    <div class="imgGalery">
+	    	<a href=""><img src="images/banners/galerias.png" alt="" class="galery"></a>
 	    </div>
 	</section>
     <section class="anuncios">
