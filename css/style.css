@@ -68,6 +68,14 @@ body
 	margin-top: 20px;
 	width: 50%;
 }
+.thumbVideos {
+	margin: 0 auto;
+	text-align: center;
+}
+.thumbVideos img{
+	margin-top: 35px;
+}
+
 /*musica nueva*/
 .musica{
 	float: left;
@@ -103,8 +111,20 @@ body
 .anun-1 img
 {
 	width: 100%;
+	margin-top:20px;
 }
+
 .redes{
+	margin-top: 20px;
+}
+
+#twitter{
+	width: 95%;
+	margin: 0 auto;
+	padding-top: 20px; 
+}
+
+#chat{
 	margin-top: 20px;
 }
 /*SLOGAN*/

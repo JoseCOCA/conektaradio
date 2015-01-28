@@ -30,7 +30,14 @@
 	    	
 	    </div>
 	    <div class="videos">
-	    	<img src="images/VideosHead.png" alt="">
+	    	<div>
+	    		<img src="images/VideosHead.png" alt="">
+	    	</div>
+	    	<div class="thumbVideos">
+	    		<img src="images/Video1.png" alt="">
+	    		<img src="images/Video2.png" alt="">
+	    		<img src="images/Video3.png" alt="">
+	    	</div>
 	    </div>
 	    <div class="musica">
 	    	<img id="musicaNueva" src="images/headMN.png" alt="">
@@ -51,9 +58,17 @@
     		<img src="images/facebook.png" alt="">
     		<img src="images/youTube.png" alt="">
     	</div>
+    	<div id="twitter">           
+
+            <a class="twitter-timeline"  href="https://twitter.com/search?q=%40conektaradio" data-widget-id="560294583687708672">Tweets sobre @conektaradio</a>
+                             
+        </div>
     	<div id="chat" class="anun-1">
-    		<img src="images/chat.png" alt="">
-    	</div>
+			<!-- Start HTML Code -->
+			<iframe width="90%" height="500px" title="Shoutbox" src="http://shoutbox.widget.me/window.html?uid=dcykabsv" frameborder="0" scrolling="auto"></iframe>
+			<br>
+			<!-- End HTML Code -->    	
+		</div>
     	<div id="comenta" class="anun-1" >
     		<a href=""><img src="images/comentarios.png" alt=""></a>
     	</div>
