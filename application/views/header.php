@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Inicio | conektaradio</title>
-    <link rel="stylesheet" href="css_/style.css">
-    <link rel="stylesheet" href="css_/slides.css">
-    <script type="text/javascript" src="js_/jquery-1.11.2.min.js"></script>
-    <script type="text/Javascript" src="js_/index.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slides.css">
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/Javascript" src="js/index.js"></script>
     <!-- <script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script> -->
-    <script type="text/javascript" src="js_/jquery.jcarousel.min.js"></script>
-    <script type="text/javascript" src="js_/jquery.pikachoose.min.js"></script>
-    <script type="text/javascript" src="js_/jquery.touchwipe.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.pikachoose.min.js"></script>
+    <script type="text/javascript" src="js/jquery.touchwipe.min.js"></script>
     
     <script language="javascript">
         $(document).ready(
@@ -25,7 +25,7 @@
     <a href="JavaScript:newPopup('http://player.inimusic.com/mashter/player/webplayershoutcast/6/5039ddb01ceca2f6494446d610d3229c.html');">
 <!--            <div class="animated infinite flash on-air" style="width: 100px; height: 100px; background-color: #C2C8D0;"></div>
  -->
-        <img class="headerImg" src="images_/head.jpg" alt="">
+        <img class="headerImg" src="images/head.jpg" alt="">
     </a>
         <div id="menu">
             <nav>

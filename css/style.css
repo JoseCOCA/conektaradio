@@ -10,6 +10,10 @@ body
     
 }
 
+a{
+	text-decoration:none;
+}
+
 .Principal{
 	float: left;
 	width: 70%;
@@ -26,7 +30,7 @@ body
 
 /*BANNER PATROCINIO*/
 .bPat{
-	background-image: url(../images/banners/backpatrocinio.png);
+	background-image: url(../images_/banners/backpatrocinio.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
@@ -39,7 +43,7 @@ body
 	text-align: center;
 }
 #prog-cont{
-	background-image: url(../images/back_programacion.png);
+	background-image: url(../images_/back_programacion.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	padding-left: 8%;
@@ -101,6 +105,12 @@ body
 	width: 100%;
 }
 /*SECCION ANUNCIOS*/
+#date_time{
+	margin-top: 20px;
+	color: #FFF;
+	font-family: sans-serif, Arial;
+	font-size: 15px;
+}
 .anuncios{
 	background: #6b0a0c;
 	width: 25%;
@@ -144,4 +154,48 @@ cursor: pointer;
 {
 	width: 100%;
 	background-color: #333333;
+}
+
+/*Animations*/
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0.7;
+  }
+}
+
+.flash {
+  -webkit-animation-name: flash;
+          animation-name: flash;
+}
+.on-air{
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-timing-function: ease-out;
+	animation-timing-function: ease-out;
 }
