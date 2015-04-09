@@ -9,6 +9,19 @@ class Templates extends CI_Controller {
 		$this->load->view('footer.php');
 	}
 
+	// Seccion de programación
+	public function programacion(){
+		$this->load->view('header.php');
+		$this->load->view('programacion.php');
+		$this->load->view('footer.php');
+	}
+	public function renovando()
+	{
+		$this->load->view('header.php');
+		$this->load->view('previo.php');
+		$this->load->view('footer.php');
+	}
+
 }
 
 /* End of file templates.php */

@@ -39,6 +39,9 @@
 */
 
 $route['default_controller'] = "templates";
+$route['programacion'] = "templates/programacion";
+$route['renovando'] = "templates/renovando";
+
 $route['404_override'] = '';
 
 
