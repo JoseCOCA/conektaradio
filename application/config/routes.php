@@ -41,6 +41,7 @@
 $route['default_controller'] = "templates";
 $route['programacion'] = "templates/programacion";
 $route['renovando'] = "templates/renovando";
+$route['miFarmacia'] = "templates/miFarmacia";
 
 $route['404_override'] = '';
 

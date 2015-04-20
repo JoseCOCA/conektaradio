@@ -1,3 +1,4 @@
+@import url("hover.css");
 body
 {
 	width: 100%;
@@ -13,7 +14,14 @@ body
 a{
 	text-decoration:none;
 }
-
+.blog{
+	width: 90%;
+	margin-left: 6%;
+	padding-top: 30px;
+}
+.oculto{
+	display: none;
+}
 .Principal{
 	float: left;
 	width: 70%;
@@ -30,7 +38,7 @@ a{
 
 /*BANNER PATROCINIO*/
 .bPat{
-	background-image: url(../images_/banners/backpatrocinio.png);
+	background-image: url(../images/banners/backpatrocinio.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
@@ -38,12 +46,51 @@ a{
 	width: 100%;
 }
 /*PROGRAMACION*/
-
+.Prog{
+	/*padding-top: 9%;*/
+	text-align: center;
+	color: #FFF;
+	cursor: pointer;
+}
+.progArt{
+	float: left;
+	width: 30%;
+	vertical-align: sub;
+	/*padding-top: 2%;*/
+	padding-left: 20px;
+}
+.progDesc{
+	padding-top:8%;
+}
+.artProg{
+	margin-top: 10%;
+	color: #fff;
+}
+.artProg img{
+	float:left;
+	width: 30%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 5%;
+}
+.artProg p{
+text-align: justify;
+padding-right: 5%;
+}
+.MainProg{
+	padding:1%;
+	background: #3C3C3C;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	width: 95%;
+	margin-top: 30px;
+}
 #headProg{
 	text-align: center;
 }
 #prog-cont{
-	background-image: url(../images_/back_programacion.png);
+	background-image: url(../images/back_programacion.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	padding-left: 8%;
@@ -154,6 +201,16 @@ cursor: pointer;
 {
 	width: 100%;
 	background-color: #333333;
+}
+/*MI FARMACIA*/
+.searchEng{
+	width: 100%;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	background-color: rgb(60, 60, 60);
+	border-radius: 20px;
+	margin-top: 30px;
+	cursor: pointer;
 }
 
 /*Animations*/

@@ -1,23 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html prefix="og: http://ogp.me/ns#" lang="es">
 <head>
+    <meta name="description" content="Conektaradio | la radio nunca habia estado tan cerca
+     de ti, conektando tus sentidos con programas de calidad y la musica que más te gusta.
+     Escuchanos todos los días he inicia tu día al cien!!">
     <meta charset="UTF-8">
-    <title>Inicio | conektaradio</title>
+    <title><?= $title; ?></title>
+    <meta property="og:url" content="http://www.conektaradio.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Conektaradio" />
+    <meta property="og:description" content="La radio nunca habia estado tan cerca de ti" />
+    <!-- Image OGP Logo2-->
+    <meta property="og:image" content="http://conektaradio.com/images/logo2.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <!-- Image OGP Logo3-->
+    <meta property="og:image" content="http://conektaradio.com/images/logo3.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <!-- FB ID -->
+    <meta property="fb:app_id" content="695585400515481" />
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slides.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-    <script type="text/Javascript" src="js/index.js"></script>
-    <!-- <script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script> -->
-    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
-    <script type="text/javascript" src="js/jquery.pikachoose.min.js"></script>
-    <script type="text/javascript" src="js/jquery.touchwipe.min.js"></script>
-    
-    <script language="javascript">
-        $(document).ready(
-            function (){
-            $("#pikame").PikaChoose({carousel:true});
-        });
-    </script>
 
 </head>
 <body>
@@ -31,8 +41,8 @@
             <nav>
                 <ul>
                     <li><a id="home" href="<?= base_url() ?>">INICIO</a></li>
-                    <li><a id="programacion" href= "<?= base_url("renovando") ?>"> PROGRAMACION</a></li>
-                    <li><a id="miFarmacia"  href="<?= base_url("renovando") ?>">MI FARMACIA</a></li>
+                    <li><a id="programacion" href= "<?= base_url("programacion") ?>"> PROGRAMACION</a></li>
+                    <li><a id="miFarmacia"  href="<?= base_url("miFarmacia") ?>">MI FARMACIA</a></li>
                     <li><a id= "coffe" href="<?= base_url("renovando") ?>">COFFEE SEED</a></li>
                     <li><a href="<?= base_url("renovando") ?>">ANTROS REST & BAR</a></li>
                     <li><a href="<?= base_url("renovando") ?>">NOTICIAS</a></li>

@@ -1,5 +1,5 @@
 function date_time(id)
-	{
+    {
         date = new Date;
         year = date.getFullYear();
         month = date.getMonth();
@@ -26,14 +26,35 @@ function date_time(id)
         document.getElementById(id).innerHTML = result;
         setTimeout('date_time("'+id+'");','1000');
         return true;
-	}
-// TODO: obtener id de cada menu
+    }
 jQuery(document).on('ready', function($){
     $=jQuery;
-    $('a').each(function(){
-            $(this).on('click', function(e){
-                    var getID = $(this).attr("id");
-                    //alert(getID);
-            })
-    })  
+    $('#promocion').PikaChoose({
+        autoplay: true,
+        hoverPause: true,
+        //showCaption: false,
+    });
+    $('.blog').slick({
+        autoplay: true,
+        //centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 2
+
+    });
+
+    $('.Prog').click(function(e){
+        e.preventDefault();
+        var getID = $(this).parent().attr("id");
+        var descripcion = $('#'+ getID).children('article');
+        var foto = $('#' + getID).children('img');
+        if(descripcion.hasClass("oculto")){
+            foto.hide("fast");
+            descripcion.slideDown("slow").toggleClass("oculto");
+        }else{
+            //alert("slideup");
+            foto.show("slow");
+            descripcion.slideUp("fast").toggleClass("oculto");
+        }
+    });
 })
+

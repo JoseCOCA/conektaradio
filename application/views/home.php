@@ -53,7 +53,5 @@
 	    </aside>
 	</section>
 	<?php $this->load->view("aside.php") ?>
-    <section class="slogan">
-    	<img src="images/slogan.png" alt="">
-    </section>
+
 </div>

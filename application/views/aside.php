@@ -1,15 +1,12 @@
     <aside class="anuncios">
     	<div class="redes">
-    		<img src="images_/twitter.png" alt="">
-    		<img src="images_/facebook.png" alt="">
-    		<img src="images_/youTube.png" alt="">
+    		<img src="images/twitter.png" alt="">
+    		<img src="images/facebook.png" alt="">
+    		<img src="images/youTube.png" alt="">
     	</div>
     	<div id="date_time">
     		<span id="date_time"></span>
     	</div>
-	    <script type="text/javascript">
-	    window.onload = date_time('date_time');
-	    </script>
  
     	<div id="twitter">           
 
@@ -23,12 +20,12 @@
 			<!-- End HTML Code -->    	
 		</div>
     	<div id="comenta" class="anun-1" >
-    		<a href=""><img src="images_/comentarios.png" alt=""></a>
+    		<a href=""><img src="images/comentarios.png" alt=""></a>
     	</div>
     	<div id="anunciate" class="anun-1"> 
-    		<a href=""><img src="images_/anunciate.png" alt=""></a>
+    		<a href=""><img src="images/anunciate.png" alt=""></a>
     	</div>
     	<div id="eventos" class="anun-1">
-    		<a href=""><img src="images_/eventos.png" alt=""></a>
+    		<a href=""><img src="images/eventos.png" alt=""></a>
     	</div>
     </aside>
