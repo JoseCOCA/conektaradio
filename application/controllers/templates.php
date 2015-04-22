@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Templates extends CI_Controller {
-	
+
 	public function __construct(){
 		parent::__construct();
 		$this->load->model('conektado');
@@ -35,6 +35,14 @@ class Templates extends CI_Controller {
 		$this->load->view('header.php', $data);
 		$this->load->view('previo.php');
 		$this->load->view('footer.php');
+	}
+
+	/*
+	 * Ejemplo de ruteo con Angluar
+	 */
+	public function example()
+	{
+		$this->load->view('ruteo.html');
 	}
 
 }
