@@ -1,5 +1,3 @@
-
-<div id="contenido">
     <section class="Principal">
 	    <aside class="bPat">
 	    	<div id="topBan"><img src="images/banners/MiFarmacia.png" alt=""></div>
@@ -22,9 +20,9 @@
 	    	<img src="images/noticias1.png" alt="">
 	    	<div>
 	    		<ul id="pikame" >
-					<li><a href="#"><img src="images/1.jpg"/></a><span>This is an example of the basic theme.</span></li>
-					<li><a href="#"><img src="images/2.jpg"/></a><span>jCarousel is supported and can be integrated with PikaChoose!</span></li>
-					<li><a href="#"><img src="images/3.jpg"/></a><span>Be sure to check out <a href="#">PikaChoose.com</a> for updates.</span></li>
+					<li><a href="#"><img src="images/1.jpg"/></a></li>
+					<li><a href="#"><img src="images/2.jpg"/></a></li>
+					<li><a href="#"><img src="images/3.jpg"/></a></li>
 				</ul>
 	    	</div>
 	    	
@@ -52,6 +50,3 @@
 	    	<a href=""><img src="images/banners/galerias.png" alt="" class="galery"></a>
 	    </aside>
 	</section>
-	<?php $this->load->view("aside.php") ?>
-
-</div>

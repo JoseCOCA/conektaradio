@@ -18,4 +18,3 @@
 		<div><img src="images/prog4.png" alt=""></div>
 	</section>
 </section>
-<?php $this->load->view("aside.php") ?>

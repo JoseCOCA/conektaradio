@@ -11,6 +11,9 @@ body
     
 }
 
+iframe, iframe>* {
+	overflow: hidden;
+}
 a{
 	text-decoration:none;
 }
@@ -255,4 +258,10 @@ cursor: pointer;
 	animation-duration: 4s;
 	-webkit-animation-timing-function: ease-out;
 	animation-timing-function: ease-out;
+}
+
+/*Audio*/
+
+#audio-player{
+	width: 100%;
 }

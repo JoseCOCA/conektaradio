@@ -1,4 +1,8 @@
     <aside class="anuncios">
+        <audio id="audio-player" controls  autoplay="autoplay" >
+            <source src="http://radio.inimusic.com:7174/;stream.mp3" type="audio/mpeg">
+                 Your browser does not support the audio element.
+        </audio>
     	<div class="redes">
     		<img src="images/twitter.png" alt="">
     		<img src="images/facebook.png" alt="">

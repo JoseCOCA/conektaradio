@@ -30,4 +30,3 @@
 			</section>		
 	<?php } ?>
 </section>
-<?php $this->load->view("aside.php") ?>
