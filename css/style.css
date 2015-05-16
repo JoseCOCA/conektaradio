@@ -121,13 +121,14 @@ padding-right: 5%;
 	float: left;
 	margin-top: 20px;
 	width: 50%;
-}
-.thumbVideos {
+}																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
+.video-thumbnail{
+	background-color: #FFF;
+	width: 70%;
+	height: 150px;
 	margin: 0 auto;
-	text-align: center;
-}
-.thumbVideos img{
-	margin-top: 35px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 /*musica nueva*/
@@ -265,3 +266,134 @@ cursor: pointer;
 #audio-player{
 	width: 100%;
 }
+
+.jp-gui {
+    position: relative;
+    width:100%;
+    background: #f34927;
+    background: -moz-linear-gradient(top,  #f34927 0%, #dd3311 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f34927), color-stop(100%,#dd3311));
+    background: -webkit-linear-gradient(top,  #f34927 0%,#dd3311 100%);
+    background: -o-linear-gradient(top,  #f34927 0%,#dd3311 100%);
+    background: -ms-linear-gradient(top,  #f34927 0%,#dd3311 100%);
+    background: linear-gradient(to bottom,  #f34927 0%,#dd3311 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f34927', endColorstr='#dd3311',GradientType=0 );
+    -webkit-box-shadow:  0px 1px 1px 0px rgba(0, 0, 0, .1);    
+    box-shadow:  0px 1px 1px 0px rgba(0, 0, 0, .1);
+    border-radius: 3px;
+    overflow: hidden;
+    /*margin-top: 10px;*/
+}
+
+.jp-controls {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: "FontAwesome";
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+    text-align: left;
+}
+ 
+.jp-controls li {
+    display: inline-block;
+ 
+}
+ 
+.jp-controls a {
+    color: #fff;
+}
+
+.jp-play,.jp-pause {
+    width: 60px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 43px;
+    border-right: 1px solid #d22f0f;
+}
+ 
+.jp-controls .jp-play:hover,.jp-controls .jp-pause:hover {
+    background-color: #de3918;
+}
+ 
+.jp-mute,.jp-unmute {
+    position: absolute;
+    right: 55px;
+    top: 0;
+    width: 20px;
+    height: 40px;
+    display: inline-block;
+    line-height: 46px;
+}
+ 
+.jp-mute {
+    text-align: left;
+}
+.jp-time-holder {
+    color: #FFF;
+    font-size: 12px;
+    line-height: 14px;
+    position: absolute;
+    right: 90px;
+    top: 14px;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+}
+
+.jp-progress {
+    background-color: #992E18;
+    border-radius: 20px 20px 20px 20px;
+    overflow: hidden;
+    position: absolute;
+    right: 133px;
+    top: 15px;
+    width: 50px;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2) inset;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2) inset;
+}
+ 
+.jp-play-bar {
+    height: 12px;
+    background-color: #fff;
+    border-radius: 20px 20px 20px 20px;
+}
+ 
+.jp-volume-bar {
+    position: absolute;
+    right: 10px;
+    top: 17px;
+    width: 45px;
+    height: 8px;
+    border-radius: 20px 20px 20px 20px;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1) inset;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1) inset;
+    background-color: #992E18;
+    overflow: hidden;
+}
+ 
+.jp-volume-bar-value {
+    background-color: #fff;
+    height: 8px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.audioInfo{
+	font-family: FontAwesome;
+	
+	padding-bottom: 30px;
+	border-style: solid;
+    border-color: #F04624;
+	background: rgba(76,76,76,1);
+	background: -moz-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(0,0,0,1) 22%, rgba(17,17,17,1) 64%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(76,76,76,1)), color-stop(22%, rgba(0,0,0,1)), color-stop(64%, rgba(17,17,17,1)), color-stop(91%, rgba(28,28,28,1)), color-stop(100%, rgba(19,19,19,1)));
+	background: -webkit-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(0,0,0,1) 22%, rgba(17,17,17,1) 64%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+	background: -o-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(0,0,0,1) 22%, rgba(17,17,17,1) 64%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+	background: -ms-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(0,0,0,1) 22%, rgba(17,17,17,1) 64%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+	background: linear-gradient(to bottom, rgba(76,76,76,1) 0%, rgba(0,0,0,1) 22%, rgba(17,17,17,1) 64%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=0 );
+}
+
+/*.audioInfo img{
+	display: inline-block;
+	position: relative;
+	left: 5px;
+}*/

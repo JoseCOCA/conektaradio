@@ -29,6 +29,9 @@ function date_time(id)
     }
 jQuery(document).on('ready', function($){
     $=jQuery;
+
+    
+
     $("#pikame").PikaChoose({carousel:true});
     //control de radio
 
@@ -60,12 +63,12 @@ jQuery(document).on('ready', function($){
             var id = $(this).attr('id');
             switch(id){
                 case "home":
-                    $("#contenido").load("templates/home",function(){
+                    $("#contenido").load("index.php/templates/home",function(){
                         $("#pikame").PikaChoose({carousel:true});
                     });
                 break;
                 case "programacion":
-                    $("#contenido").load("templates/programacion",function(){
+                    $("#contenido").load("index.php/templates/programacion",function(){
 
                         $('.Prog').click(function(e){
                             e.preventDefault();
@@ -85,7 +88,7 @@ jQuery(document).on('ready', function($){
                 break;
 
                 case "miFarmacia":
-                    $("#contenido").load("templates/miFarmacia",function(){
+                    $("#contenido").load("index.php/templates/miFarmacia",function(){
                         $('.blog').slick({
                             autoplay: true,
                             //centerMode: true,
@@ -103,25 +106,39 @@ jQuery(document).on('ready', function($){
                     });
                 break;
                 case "coffe":
-                    $("#contenido").load("templates/renovando");
+                    $("#contenido").load("index.php/templates/renovando");
                 break; 
                 case "antros":
-                    $("#contenido").load("templates/renovando");
+                    $("#contenido").load("index.php/templates/renovando");
                 break; 
                 case "noticias":
-                    $("#contenido").load("templates/renovando");
+                    $("#contenido").load("index.php/templates/renovando");
                 break; 
                 case "podcast":
-                    $("#contenido").load("templates/renovando");
+                    $("#contenido").load("index.php/templates/renovando");
                 break; 
                 case "musica":
-                    $("#contenido").load("templates/renovando");
+                    $("#contenido").load("index.php/templates/renovando");
                 break;
                 case "contacto":
-                    $("#contenido").load("templates/renovando");
+                    $("#contenido").load("index.php/templates/renovando");
                 break;
 
             }
     });
+
+    /* JPLAYER RADIO */
+
+    $("#jquery_jplayer_1").jPlayer({
+    ready: function () {
+      $(this).jPlayer("setMedia", {
+        mp3: "http://radio.inimusic.com:7174/;stream.mp3",
+         // oga: "audio/TEDxPhoenix-KelliAnderson-DisruptiveWonderforaChange.ogg"
+      }).jPlayer("play");
+    },
+    swfPath: "js/",
+    supplied: "mp3",
+    solution: "html,flash",
+  });
 })
 

@@ -27,8 +27,11 @@
     <link rel="stylesheet" href="css/slides.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-    <script src="//api.html5media.info/1.1.8/html5media.min.js"></script>
+    <!-- <script src="//api.html5media.info/1.1.8/html5media.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=OnLoadCallback"></script>
 </head>
 <body>
     <header>
@@ -72,6 +75,7 @@
     <script type="text/javascript" src="js/jquery.pikachoose.min.js"></script>
     <script type="text/javascript" src="js/jquery.touchwipe.min.js"></script>
     <script src="http://shoutbox.widget.me/v1.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript" src="http://radio.inimusic.com/system/streaminfo.js"></script>
     <script language="javascript">
         window.onload = date_time('date_time');
         !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
