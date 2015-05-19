@@ -31,13 +31,13 @@
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
     <!-- <script src="//api.html5media.info/1.1.8/html5media.min.js"></script> -->
     <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
-    <script src="https://apis.google.com/js/client.js?onload=OnLoadCallback"></script>
-</head>
+    <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
 <body>
     <header>
         <a href="#" id="radio">
             <img class="headerImg" src="images/head.jpg" alt="">
         </a>
+
         <div id="menu">
             <nav>
                 <ul>
@@ -55,7 +55,6 @@
         </div>
     </header> 
 
-
 <!--         <button id = "play-bt">
             <img style="width:30px;"src="images/playBtn.png" alt="">
         </button> -->
@@ -63,6 +62,14 @@
         <?php $this->load->view('home'); ?>
     </div>
         <?php $this->load->view('aside'); ?>
+    <div id="overlay">
+                <a href="#" class="close-overlay"><div id="overlay-back"></div></a>
+                <a href="#" id="close-btn-ov" class="close-overlay"><i class="fa fa-times-circle fa-3x"></i></a>
+
+        <div class="overlay-cont" id="overlay-content">
+            <div id="ytplayer"></div>
+        </div>
+    </div>
 <footer>
 <!--     <iframe src="http://player.inimusic.com/mashter/player/webplayershoutcast/6/5039ddb01ceca2f6494446d610d3229c.html" frameborder="0" allowfullscreen></iframe>
  -->    <section class="slogan">
@@ -70,6 +77,7 @@
     </section>
 </footer>
     <script type="text/Javascript" src="js/index.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script></head>
     <script type="text/Javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
     <script type="text/javascript" src="js/jquery.pikachoose.min.js"></script>

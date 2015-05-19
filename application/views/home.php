@@ -31,17 +31,7 @@
 	    	
 	    		<img src="images/VideosHead.png" alt="">
 	    	
-	    	<div class="thumbVideos">
-
-	    		<div class="video-thumbnail">
-	    			<img src="http://img.youtube.com/vi/Gwq67rjN_E4/1.jpg" alt="">
-	    			
-	    		</div>
-	    		<img src="images/Video1.png" alt="">
-<!-- 	    		<img src="images/Video2.png" alt="">
-	    		<img src="images/Video3.png" alt="">
- -->
-		    	</div>
+	    	<div class="thumbVideos"><!-- LISTA DE VIDEOS  --></div>
 	    </section>
 	    <section class="musica">
 	    	<img id="musicaNueva" src="images/headMN.png" alt="">
