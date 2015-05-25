@@ -4,11 +4,9 @@
         <div id="jp_container_1" class="jp-audio">
           <div class="jp-type-single">
             
-            <div class="audioInfo hvr-rectangle-out">
+            <div class="audioInfo">
                 <img style="width:100%; margin-bottom:10px" src="images/playerHeader.png" alt="">
-                <a href="http://radio.inimusic.com/tunein/radioumbral.pls" id="cc_strinfo_song_radioumbral" class="cc_streaminfo">Cargando ...</a><br /><br>
-                <img id="cc_strinfo_trackimageurl_radioumbral" class="cc_streaminfo" /><br /><br>
-                <a href="#" id="cc_strinfo_trackbuyurl_radioumbral" class="cc_streaminfo">Comprar este album</a>                
+                <a href="http://radio.inimusic.com/tunein/radioumbral.pls" id="cc_strinfo_song_radioumbral" class="cc_streaminfo">Cargando ...</a>
             </div>
 
             <div class="jp-gui jp-interface">

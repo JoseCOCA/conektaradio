@@ -232,5 +232,31 @@ jQuery(document).on('ready', function($){
         $('.overlay-cont').append(playerDiv);
 
     });
+
+    // MUSICA NUEVA
+
+    $('.musica-principal').click(function(event) {
+        /* Act on the event */
+        var audio = $(this).children('.song');
+        var player = audio.children()[0];
+
+        $('.song').each(function() {
+            var esteID = $(this).attr('id');
+            var everyPlayer = $(this).children()[0];
+            $('#'+esteID).slideUp('slow');
+            if(!everyPlayer.paused){
+                everyPlayer.pause();
+            }
+        }); 
+        if(audio.hasClass("oculto")){
+            audio.slideDown("slow").toggleClass("oculto");
+            $('#jquery_jplayer_1').jPlayer("stop");
+            player.play();
+        }else{
+            audio.toggleClass("oculto");
+            player.pause();
+            $('#jquery_jplayer_1').jPlayer("play");
+        }
+    });
 })
 

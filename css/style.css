@@ -1,4 +1,9 @@
+
 @import url("hover.css");
+@font-face {
+	font-family: heroic;
+	src: url(../fonts/HeroicCondensed-Regular.otf);
+}
 body
 {
 	width: 100%;
@@ -8,6 +13,8 @@ body
 	margin-top: 0px;
 	margin: 0 auto; 
 	background-color: #333333;
+	font-family: heroic, sans-serif;
+	font-size: 20px;
     
 }
 
@@ -163,23 +170,101 @@ padding-right: 5%;
 .musica{
 	float: left;
 	width: 50%;
+	margin-top: 20px;
 }
-#musicaNueva{
-	position: relative;
-	top: 15px;
-	z-index: 8;
-	left: 20px;
+#musica-head{
+	width: 90%;
+	margin-left: 5%;
 }
 
-.mnPrin{
+.musica-principal{
+	width: 90%;
+	margin-left: 5%;
 	position: relative;
-	top: -46px;
-	left: 20px;
+	top: -10px;
+	z-index: 8;
+	font-style: italic;
+	cursor: pointer;
+	background-color: #1A1A1A;
+	border-bottom-style: solid;
+	border-width: 2px;
+   	border-bottom-width:2px;
+   	border-bottom-color: #FFF;
 }
-#MNotros{
+
+.musica-principal h2{
+	font-size: 40px;
+	color: #FBB03B;
+	margin-bottom: 0px;
+	font-weight: 100;
+}
+.musica-principal h3{
+	font-size: 30px;
+	color: #FFF;
+	margin-top: 0px;
+	font-weight: 100;
+}
+.musica-desc{
+	display: inline-block;
+}
+.musica-otro{
+   	padding-top: 10px;
+   	padding-bottom: 10px;
+   	position: relative;
+   	top: -10px;
+}
+.musica-otro img{
+ width: 30%;
+ margin-top: 1%;
+}
+.musica-otro > *{
+	float: left;
+	margin-left: 2%;
+
+}
+.song{
+	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-left: 5%;
+	width: 90%;
+
+}
+.song audio{
+	width:100%;
+	display: block;
+}
+.clearfix {
+    zoom:1 ; /*for IE*/ 
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+#img-artist{
+	width: 30%;
+	margin-top:10px;
+}
+#img-princ{
+	width: 100%;
+}
+.artista-princ{
+	
 	position: relative;
-	top:-20px;
+	top: -5px;
+	padding-top: 1px;
+	padding-left: 22px;
+	padding-bottom: 1px;
+	
 }
+
+
 .galery{
 	width: 100%;
 }
@@ -227,6 +312,7 @@ nav ul li
 display: inline-block;
 margin-right: 40px;
 cursor: pointer;
+font-size: 30px;
 
 }
 #contenido
