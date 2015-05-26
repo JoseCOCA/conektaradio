@@ -43,6 +43,7 @@
 		    		$imagen 		= $musicaNueva[$key]->imagen;	    				
 		    		$artista 		= $musicaNueva[$key]->artista;
 		    		$posicion 		= $musicaNueva[$key]->posicion;
+		    		$artRec			=  str_replace(' ', '', $artista);
 	    		?>
 	    		<?php if($posicion == 0): ?>
 	    			<div class="musica-principal " >
@@ -61,12 +62,12 @@
 	    			</div>
 	    		<?php else: ?>
 			    	<div class="musica-principal clearfix  musica-otro ">
-			    			<img id="img-otro" src="<?= $imagen ?>" alt="<?= $artista ?>">
+			    			<img id="img-otro" src="<?= $imagen ?>" alt="<?= $artRec ?>">
 			    			<div>
 				    			<h2 id="artista"><?= $artista; ?></h2>
 				    			<h3 id="tema"><?= $nombreCancion; ?></h3>
 			    			</div>
-			    			<div class="oculto song" id="MN-audio-<?= $artista ?>">
+			    			<div class="oculto song" id="MN-audio-<?= $artRec ?>">
 		    					<audio id ="player-mn" controls preload>
 		    						<!-- <source src="horse.ogg" type="audio/ogg"> -->
 									<source src="<?= $audio ?>" type="audio/mpeg">

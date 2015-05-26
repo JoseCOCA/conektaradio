@@ -81,7 +81,7 @@ function date_time(id)
     
     function embedVideo(vidID){
     var player;
-        $('#jquery_jplayer_1').jPlayer("stop");
+        $('#jquery_jplayer_1').jPlayer("mute");
     player = new YT.Player('ytplayer', {
         height: '390',
         width: '640',
@@ -116,7 +116,6 @@ jQuery(document).on('ready', function($){
         /* Act on the event */
        //event.preventDefault();
        var videoID = $(this).parent().data('embedid');
-       console.log(videoID);
        embedVideo(videoID);
         
     });
@@ -147,6 +146,46 @@ jQuery(document).on('ready', function($){
                         //youtube api videos seleccionados
 
                         videos('xb6sSVjXjYk,oNNzdLx-7ZA,7iQviGluTtg');
+                    
+                        $('.thumbVideos').on('click','#videoLink',function(event) {
+                            /* Act on the event */
+                           //event.preventDefault();
+                           var videoID = $(this).parent().data('embedid');
+                           embedVideo(videoID);
+                            
+                        });
+
+                        // MUSICA NUEVA
+
+                        $('.musica-principal').click(function(event) {
+                            /* Act on the event */
+                            var audio = $(this).children('.song');
+                            var player = audio.children()[0];
+
+                            $('.song').each(function() {
+                                var esteID = $(this).attr('id');
+                                var everyPlayer = $(this).children()[0];
+                                $('#'+esteID).slideUp('slow');
+                                if($('#'+esteID).hasClass('visible')){
+                                $('#'+esteID).removeClass('visible');
+                                //$('#'+esteID).addClass('oculto');
+                                }
+                                if(!everyPlayer.paused){
+                                    everyPlayer.pause();
+                                }
+                            }); 
+                            if(audio.hasClass("oculto")){
+                                audio.slideDown("slow").toggleClass("oculto");
+                                audio.addClass('visible');
+                                $('#jquery_jplayer_1').jPlayer("mute");
+                                player.play();
+                            }else{
+                                audio.toggleClass("oculto");
+                                audio.removeClass('visible');
+                                player.pause();
+                                $('#jquery_jplayer_1').jPlayer("unmute");
+                            }
+                        });
 
                     });
                 break;
@@ -226,7 +265,7 @@ jQuery(document).on('ready', function($){
   });
     $('.close-overlay').click(function(event) {
         /* reanudar reproductor al cerrar overlay*/
-        $('#jquery_jplayer_1').jPlayer("play");
+        $('#jquery_jplayer_1').jPlayer("unmute");
         $('#ytplayer').remove();
         var playerDiv = '<div id="ytplayer"></div>';
         $('.overlay-cont').append(playerDiv);
@@ -244,18 +283,24 @@ jQuery(document).on('ready', function($){
             var esteID = $(this).attr('id');
             var everyPlayer = $(this).children()[0];
             $('#'+esteID).slideUp('slow');
+            if($('#'+esteID).hasClass('visible')){
+            $('#'+esteID).removeClass('visible');
+            //$('#'+esteID).addClass('oculto');
+            }
             if(!everyPlayer.paused){
                 everyPlayer.pause();
             }
         }); 
         if(audio.hasClass("oculto")){
             audio.slideDown("slow").toggleClass("oculto");
-            $('#jquery_jplayer_1').jPlayer("stop");
+            audio.addClass('visible');
+            $('#jquery_jplayer_1').jPlayer("mute");
             player.play();
         }else{
             audio.toggleClass("oculto");
+            audio.removeClass('visible');
             player.pause();
-            $('#jquery_jplayer_1').jPlayer("play");
+            $('#jquery_jplayer_1').jPlayer("unmute");
         }
     });
 })

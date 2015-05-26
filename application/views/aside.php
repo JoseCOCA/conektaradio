@@ -47,9 +47,9 @@
         </audio>
  -->    	
         <div class="redes">
-    		<img src="images/twitter.png" alt="">
-    		<img src="images/facebook.png" alt="">
-    		<img src="images/youTube.png" alt="">
+          <a href="https://twitter.com/conektaradio" target="_blank"><i class="twit fa fa-twitter"></i></a>
+          <a href="https://www.youtube.com/channel/UCZLR3vskU_xA4Cp3akputoA" target="_blank"><i class="youtube fa fa-youtube"></i></a>
+          <a href="https://www.facebook.com/conektaradio" target="_blank"><i class="face fa fa-facebook"></i></a>
     	</div>
     	<div id="date_time">
     		<span id="date_time"></span>

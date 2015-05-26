@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 20-04-2015 a las 19:31:15
+-- Tiempo de generación: 25-05-2015 a las 19:54:03
 -- Versión del servidor: 5.6.21
 -- Versión de PHP: 5.5.19
 
@@ -19,6 +19,30 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `conektado`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `Musica`
+--
+
+CREATE TABLE IF NOT EXISTS `Musica` (
+`ID` int(11) NOT NULL,
+  `url` text COLLATE utf8_unicode_ci NOT NULL,
+  `imagen` text COLLATE utf8_unicode_ci NOT NULL,
+  `artista` text COLLATE utf8_unicode_ci NOT NULL,
+  `posicion` int(1) NOT NULL COMMENT '0 = Principal , 1 = otros ',
+  `cancion` text COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `Musica`
+--
+
+INSERT INTO `Musica` (`ID`, `url`, `imagen`, `artista`, `posicion`, `cancion`) VALUES
+(1, 'audio/musicaNueva/evanoff.mp3', 'images/musicaNueva/artistas/portada_evanoff.jpg', 'Evanoff', 0, 'Moria de ganas'),
+(2, 'audio/musicaNueva/ElGalanDeLaPlebada.mp3', 'images/musicaNueva/artistas/alfredo.jpg', 'Alfredo', 1, 'El galan de la plebada'),
+(3, 'audio/musicaNueva/incomparable.mp3', 'images/musicaNueva/artistas/incomparable.jpg', 'EyBy Valencia', 1, 'El incomparable');
 
 -- --------------------------------------------------------
 
@@ -49,6 +73,12 @@ INSERT INTO `Programas` (`ID`, `Programa`, `Horario`, `img1`, `img2`, `Descripci
 --
 
 --
+-- Indices de la tabla `Musica`
+--
+ALTER TABLE `Musica`
+ ADD PRIMARY KEY (`ID`);
+
+--
 -- Indices de la tabla `Programas`
 --
 ALTER TABLE `Programas`
@@ -58,6 +88,11 @@ ALTER TABLE `Programas`
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
+--
+-- AUTO_INCREMENT de la tabla `Musica`
+--
+ALTER TABLE `Musica`
+MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT de la tabla `Programas`
 --

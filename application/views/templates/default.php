@@ -4,6 +4,7 @@
     <meta name="description" content="Conektaradio | la radio nunca habia estado tan cerca
      de ti, conektando tus sentidos con programas de calidad y la musica que más te gusta.
      Escuchanos todos los días he inicia tu día al cien!!">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="UTF-8">
     <title><?= $title; ?></title>
     <meta property="og:url" content="http://conektaradio.com" />

@@ -1,4 +1,4 @@
-
+@charset "UTF-8";
 @import url("hover.css");
 @font-face {
 	font-family: heroic;
@@ -215,6 +215,7 @@ padding-right: 5%;
 }
 .musica-otro img{
  width: 30%;
+ height: 150px;
  margin-top: 1%;
 }
 .musica-otro > *{
@@ -291,7 +292,29 @@ padding-right: 5%;
 .redes{
 	margin-top: 20px;
 }
+.redes i{
+  width: 50px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 29px;
+  margin-right: 10px;
+  padding-top: 10px;
+}
 
+
+.twit{
+	color:#FFF;
+	background: #55ACEE; 
+}
+
+.youtube{
+	background: #bb0000;
+	color: #FFF;
+}
+.face{
+	color: #FFF;
+	background: #3b5998; 
+}
 #twitter{
 	width: 95%;
 	margin: 0 auto;
