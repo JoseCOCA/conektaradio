@@ -60,11 +60,12 @@
             <a class="twitter-timeline"  href="https://twitter.com/search?q=%40conektaradio" data-widget-id="560294583687708672">Tweets sobre @conektaradio</a>
                              
         </div>
-    	<div id="chat" class="anun-1">
-			<!-- Start HTML Code -->
-			<iframe width="90%" height="500px" title="Shoutbox" src="http://shoutbox.widget.me/window.html?uid=dcykabsv" frameborder="0" scrolling="auto"></iframe>
-			<br>
-			<!-- End HTML Code -->    	
+    	<div  class="chat-shoutbox">
+           <script src="http://www.shoutbox.com/chat/chat.js.php"></script>
+            <script> 
+                var chat = new Chat(1288);
+                chat.traductions.enterYourTextHere = "Escriba su comentario aquí";
+            </script>
 		</div>
     	<div id="comenta" class="anun-1" >
     		<a href=""><img src="images/comentarios.png" alt=""></a>

@@ -9,7 +9,7 @@ class Templates extends CI_Controller {
 
 	public function index()
 	{
-		$data['title'] = "inicio | conektaradio";
+		$data['title'] = "conektaradio : radio por internet";
 		$data['musicaNueva'] = $this->conektado->get("Musica");
 
 		$this->load->view('templates/default',$data);

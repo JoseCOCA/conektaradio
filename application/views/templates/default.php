@@ -82,7 +82,6 @@
     <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
     <script type="text/javascript" src="js/jquery.pikachoose.min.js"></script>
     <script type="text/javascript" src="js/jquery.touchwipe.min.js"></script>
-    <script src="http://shoutbox.widget.me/v1.js" type="text/javascript"></script>
     <script language="javascript" type="text/javascript" src="http://radio.inimusic.com/system/streaminfo.js"></script>
     <script language="javascript">
         window.onload = date_time('date_time');
