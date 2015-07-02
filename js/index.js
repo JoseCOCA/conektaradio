@@ -119,7 +119,22 @@ jQuery(document).on('ready', function($){
        embedVideo(videoID);
         
     });
- 
+
+    $('.song').on('contextmenu', function(){
+        return false;
+    });
+
+    $('.audio-content').on('contextmenu', function(){
+        return false;
+    });
+
+    // $('.PlayerHola').on("play", function() {
+    //     $('#jquery_jplayer_1').jPlayer("mute");
+    // });
+
+    // $('.PlayerHola').on("pause", function() {
+    //     $('#jquery_jplayer_1').jPlayer("unmute");
+    // });
 
     $("#pikame").PikaChoose({carousel:true});
 
@@ -140,6 +155,11 @@ jQuery(document).on('ready', function($){
                 case "home":
                     $("#contenido").load("index.php/templates/home",function(){
 
+                        //prevenir descarga de audio
+                            $('.song').on('contextmenu', function(){
+                            return false;
+                        });
+
                         // carrousel noticias
                         $("#pikame").PikaChoose({carousel:true});
 
@@ -158,32 +178,45 @@ jQuery(document).on('ready', function($){
                         // MUSICA NUEVA
 
                         $('.musica-principal').click(function(event) {
-                            /* Act on the event */
                             var audio = $(this).children('.song');
-                            var player = audio.children()[0];
+                            var audioSource = $(this).data('audio');
+                            var idAudio = audio.attr('id');
 
-                            $('.song').each(function() {
-                                var esteID = $(this).attr('id');
-                                var everyPlayer = $(this).children()[0];
-                                $('#'+esteID).slideUp('slow');
-                                if($('#'+esteID).hasClass('visible')){
-                                $('#'+esteID).removeClass('visible');
-                                //$('#'+esteID).addClass('oculto');
-                                }
-                                if(!everyPlayer.paused){
-                                    everyPlayer.pause();
-                                }
-                            }); 
-                            if(audio.hasClass("oculto")){
-                                audio.slideDown("slow").toggleClass("oculto");
-                                audio.addClass('visible');
-                                $('#jquery_jplayer_1').jPlayer("mute");
-                                player.play();
+                            var data = { audio: audioSource };
+
+                            if($('#'+idAudio).hasClass('visible')){
+                                $('#'+idAudio).slideUp('slow',function () {
+                                    $(this).removeClass('visible');
+                                    $(this).addClass('oculto');
+                                    $(this).empty();
+                                })
                             }else{
-                                audio.toggleClass("oculto");
-                                audio.removeClass('visible');
-                                player.pause();
-                                $('#jquery_jplayer_1').jPlayer("unmute");
+                                $('#'+ idAudio).load('index.php/templates/audios',data,
+                                    function(){
+                                    /* Act on the event */
+                                    var player = audio.children()[0];
+                                    var thisID = $(this).attr('id');
+
+                                    $('.song').each(function() {
+                                        var esteID = $(this).attr('id');
+                                        if(thisID == esteID){
+                                            $(this).slideDown('slow', function() {
+                                                $(this).removeClass('oculto').addClass('visible');
+                                                $('#jquery_jplayer_1').jPlayer("mute");
+                                                // player.play();
+                                            });
+                                        }else{
+                                            $(this).slideUp('slow',function () {
+                                                $(this).removeClass('visible').addClass('oculto');
+                                                // player.pause();
+                                                $('#jquery_jplayer_1').jPlayer("unmute");
+                                                $(this).empty();
+                                            });
+                                        }
+                                        
+                                    }); 
+
+                                });
                             }
                         });
 
@@ -275,32 +308,45 @@ jQuery(document).on('ready', function($){
     // MUSICA NUEVA
 
     $('.musica-principal').click(function(event) {
-        /* Act on the event */
         var audio = $(this).children('.song');
-        var player = audio.children()[0];
+        var audioSource = $(this).data('audio');
+        var idAudio = audio.attr('id');
 
-        $('.song').each(function() {
-            var esteID = $(this).attr('id');
-            var everyPlayer = $(this).children()[0];
-            $('#'+esteID).slideUp('slow');
-            if($('#'+esteID).hasClass('visible')){
-            $('#'+esteID).removeClass('visible');
-            //$('#'+esteID).addClass('oculto');
-            }
-            if(!everyPlayer.paused){
-                everyPlayer.pause();
-            }
-        }); 
-        if(audio.hasClass("oculto")){
-            audio.slideDown("slow").toggleClass("oculto");
-            audio.addClass('visible');
-            $('#jquery_jplayer_1').jPlayer("mute");
-            player.play();
+        var data = { audio: audioSource };
+
+        if($('#'+idAudio).hasClass('visible')){
+            $('#'+idAudio).slideUp('slow',function () {
+                $(this).removeClass('visible');
+                $(this).addClass('oculto');
+                $(this).empty();
+            })
         }else{
-            audio.toggleClass("oculto");
-            audio.removeClass('visible');
-            player.pause();
-            $('#jquery_jplayer_1').jPlayer("unmute");
+            $('#'+ idAudio).load('index.php/templates/audios',data,
+                function(){
+                /* Act on the event */
+                var player = audio.children()[0];
+                var thisID = $(this).attr('id');
+
+                $('.song').each(function() {
+                    var esteID = $(this).attr('id');
+                    if(thisID == esteID){
+                        $(this).slideDown('slow', function() {
+                            $(this).removeClass('oculto').addClass('visible');
+                            $('#jquery_jplayer_1').jPlayer("mute");
+                            // player.play();
+                        });
+                    }else{
+                        $(this).slideUp('slow',function () {
+                            $(this).removeClass('visible').addClass('oculto');
+                            // player.pause();
+                            $('#jquery_jplayer_1').jPlayer("unmute");
+                            $(this).empty();
+                        });
+                    }
+                    
+                }); 
+
+            });
         }
     });
 })

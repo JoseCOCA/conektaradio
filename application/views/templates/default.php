@@ -45,7 +45,6 @@
                     <li><a class="navMenu" id="home" href="">INICIO</a></li>
                     <li><a class="navMenu" id="programacion" href= ""> PROGRAMACION</a></li>
                     <li><a class="navMenu" id="miFarmacia"  href="">MI FARMACIA</a></li>
-                    <li><a class="navMenu" id= "coffe" href="">COFFEE SEED</a></li>
                     <li><a class="navMenu" id="antros" href="">ANTROS REST & BAR</a></li>
                     <li><a class="navMenu" id="podcast" href="">PODCAST</a></li>
                     <li><a class="navMenu" id="musica" href="">MUSICA</a></li>

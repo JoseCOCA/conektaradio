@@ -12,7 +12,6 @@
 	    		<div class="col-3"><img src="images/prog5.png" alt=""></div>
 	    		<div class="col-3"><img src="images/prog6.png" alt=""></div>
 	    		<div class="col-3"><img src="images/prog7.png" alt=""></div>
-	    		<div class="col-3"><img src="images/prog8.png" alt=""></div>
 	    		<div class="col-3"><img src="images/prog9.png" alt=""></div>
 	    	</div>
 	    </section>
@@ -29,7 +28,7 @@
 	    </section>
 	    <section class="videos">
 	    	
-	    		<img src="images/VideosHead.png" alt="">
+	    		<img src="images/VideosHead.png" alt="" style="width:80%;">
 	    	
 	    	<div class="thumbVideos"><!-- LISTA DE VIDEOS  --></div>
 	    </section>
@@ -46,18 +45,14 @@
 		    		$artRec			=  str_replace(' ', '', $artista);
 	    		?>
 	    		<?php if($posicion == 0): ?>
-	    			<div class="musica-principal " >
+	    			<div class="musica-principal " data-audio = "<?= $audio ?>">
 		    			<img id="img-princ" src="<?= $imagen ?>" alt="<?= $artista ?>">
 		    			<div class="artista-princ">
 		    				<h2 id="artista"><?= $artista; ?></h2>
 		    				<h3 id="tema"><?= $nombreCancion; ?></h3>
 		    			</div>
 	    				<div class="oculto song" id="MN-audio-<?= $artista ?>">
-	    					<audio controls preload>
-	    						<!-- <source src="horse.ogg" type="audio/ogg"> -->
-								<source src="<?= $audio ?>" type="audio/mpeg">
-									Your browser does not support the audio tag.
-	    					</audio>
+	    					
 	    				</div>
 	    			</div>
 	    		<?php else: ?>
@@ -67,12 +62,8 @@
 				    			<h2 id="artista"><?= $artista; ?></h2>
 				    			<h3 id="tema"><?= $nombreCancion; ?></h3>
 			    			</div>
-			    			<div class="oculto song" id="MN-audio-<?= $artRec ?>">
-		    					<audio id ="player-mn" controls preload>
-		    						<!-- <source src="horse.ogg" type="audio/ogg"> -->
-									<source src="<?= $audio ?>" type="audio/mpeg">
-  									Your browser does not support the audio tag.
-		    					</audio>
+			    			<div class="oculto song" id="MN-audio-<?= $artRec ?>" data-audio = "<?= $audio ?>">
+			    			
 		    				</div>
 	    			</div>	    	
 	    		<?php endif; ?>

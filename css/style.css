@@ -625,3 +625,18 @@ font-size: 30px;
 .adShoutBox{
 	display: none;
 }
+
+/*SALUDOS*/
+
+.saludos-conektos{
+	width: 100%;
+	height: 200px;
+	margin-top: 30px;
+	margin-bottom: 30px; 
+	overflow-y: scroll;
+}
+
+.saludos-conektos audio{
+	width: 90%;
+
+}

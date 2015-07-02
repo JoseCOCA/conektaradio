@@ -11,6 +11,7 @@ class Templates extends CI_Controller {
 	{
 		$data['title'] = "conektaradio : radio por internet";
 		$data['musicaNueva'] = $this->conektado->get("Musica");
+		$data['saludos'] = $this->conektado->get("saludos");
 
 		$this->load->view('templates/default',$data);
 
@@ -49,6 +50,20 @@ class Templates extends CI_Controller {
 	public function example()
 	{
 		$this->load->view('ruteo.html');
+	}
+
+	public function audios()
+	{
+		$audio = $this->input->post('audio');
+
+		if(is_null($audio)){
+			echo "error";
+		}else{
+			$data['audio'] = $audio;
+			$audioView = $this->load->view('audioMN',$data,TRUE);
+			echo $audioView;
+		}
+
 	}
 }
 /* End of file templates.php */

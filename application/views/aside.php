@@ -67,6 +67,19 @@
                 chat.traductions.enterYourTextHere = "Escriba su comentario aquí";
             </script>
 		</div>
+      <div id="saludos" class="saludos-conektos">
+        <h6 style="color: #FFF; font-size: 30px; margin-bottom: 10px; margin-top: 10px" >Envía tus saludos!</h6>
+        <?php foreach ($saludos as $key=>$value):?>
+            <?php $mp3 = $value->audio; ?>        
+            <?php $ogg = $value->audio_ogg; ?>
+            <audio id="saludoPlayer" class="PlayerHola audio-content" controls preload="none">
+                <source src="<?= $mp3 ?>" type="audio/mpeg">
+                <source src="<?= $ogg ?>" type="audio/ogg">
+                Tu navegador no soporta el elemento audio de HTML5.
+            </audio>        
+
+        <?php endforeach; ?>
+      </div>
     	<div id="comenta" class="anun-1" >
     		<a href=""><img src="images/comentarios.png" alt=""></a>
     	</div>
