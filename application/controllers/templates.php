@@ -12,6 +12,7 @@ class Templates extends CI_Controller {
 		$data['title'] = "conektaradio : radio por internet";
 		$data['musicaNueva'] = $this->conektado->get("Musica");
 		$data['saludos'] = $this->conektado->get("saludos");
+		$data['nota']	= $this->conektado->get("notas");
 
 		$this->load->view('templates/default',$data);
 
@@ -20,6 +21,7 @@ class Templates extends CI_Controller {
 	public function home()
 	{
 		$data['musicaNueva'] = $this->conektado->get("Musica");
+		$data['nota']	= $this->conektado->get("notas");
 		$home = $this->load->view('home',$data,TRUE);
 		echo $home;
 	}
@@ -42,6 +44,18 @@ class Templates extends CI_Controller {
 		$data['title'] = "Renovando tus sentidos";
 		$renovando = $this->load->view('previo',$data,TRUE);
 		echo $renovando;
+	}
+
+	public function noticias()
+	{
+		$notaID = $this->input->post('idNota');
+		$data	= $this->conektado->getNote($notaID);
+
+		if(!is_null($data)){
+
+			$noticias = $this->load->view('noticias',$data,TRUE);
+			echo $noticias;
+		}
 	}
 
 	/*

@@ -19,9 +19,22 @@
 	    	<img src="images/noticias1.png" alt="">
 	    	<div>
 	    		<ul id="pikame" >
-					<li><a href="#"><img src="images/1.jpg"/></a></li>
-					<li><a href="#"><img src="images/2.jpg"/></a></li>
-					<li><a href="#"><img src="images/3.jpg"/></a></li>
+
+	    			<?php foreach ($nota as $key => $value): ?>
+	    			<?php  
+	    				$idNota = $value->id_nota;
+	    				$nota = $value->nota;
+	    				$imgPrincipal = $value->imagen_principal;
+	    				$imagenes = $value->imagenes;
+	    			?>
+
+					<li class="notas" id="<?= $idNota ?>">
+					<a href="#overlay"><img src="<?php echo $imgPrincipal; ?>"/><span>CONEKTARADIO PRESENTE ... </span></a>
+					</li>
+
+	    			<?php endforeach; ?>
+					<li><a  href="#overlay"><img src="images/nota1_foto2.jpg"/></a><span>CONEKTARADIO PRESENTE ... </span></li>
+					<li><a  href="#overlay"><img src="images/nota1_foto5.jpg"/></a><span>CONEKTARADIO PRESENTE ... </span></li>
 				</ul>
 	    	</div>
 	    	

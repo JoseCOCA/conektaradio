@@ -15,6 +15,19 @@ class Conektado extends CI_Model {
 			return NULL;
 		}
 	}
+
+	public function getNote($ID)
+	{
+		$query = $this->db->get_where('notas', array('id_nota' => $ID));
+		if ($query->num_rows() > 0) {
+			foreach ($query->result() as $row) {
+					$data[] = $row;
+			}
+				return $data;
+		}else{
+			return NULL;
+		}
+	}
 	
 }
 

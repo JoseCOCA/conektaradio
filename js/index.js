@@ -128,15 +128,19 @@ jQuery(document).on('ready', function($){
         return false;
     });
 
-    // $('.PlayerHola').on("play", function() {
-    //     $('#jquery_jplayer_1').jPlayer("mute");
-    // });
-
-    // $('.PlayerHola').on("pause", function() {
-    //     $('#jquery_jplayer_1').jPlayer("unmute");
-    // });
-
     $("#pikame").PikaChoose({carousel:true});
+
+    $('.notas').click(function(event) {
+        event.preventDefault();
+        var data = {
+           idNota : $(this).attr('id')
+        };
+
+        console.log(data);
+
+        $('#overlay-content').load('index.php/templates/noticias', data,function(){});
+
+    });
 
     //radio popup window
 

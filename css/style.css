@@ -640,3 +640,12 @@ font-size: 30px;
 	width: 90%;
 
 }
+
+/*NOTICIAS*/
+.nota-sect{
+	background-color: #3C3C3C;
+	margin-top: 20px;
+}
+.nota-article{
+	color: #FFF;
+}
