@@ -576,18 +576,15 @@ font-size: 30px;
 }
 
 #overlay-content{
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
+  position: relative;
+
 }
 
 #close-btn-ov{
 	position: fixed;
 	left: 90%;
 	top: 5%;
+	z-index: 10;
 }
 
 #close-btn-ov:hover{
@@ -644,8 +641,27 @@ font-size: 30px;
 /*NOTICIAS*/
 .nota-sect{
 	background-color: #3C3C3C;
+	width: 60%;
+	margin: 0px auto;
 	margin-top: 20px;
 }
 .nota-article{
 	color: #FFF;
+	padding: 30px;
+}
+#nota-slider{
+	display: none;
+}
+
+#ytplayer{
+	position: fixed;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);	
+}
+
+#banner-slider{
+	display: none;
 }

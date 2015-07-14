@@ -45,7 +45,6 @@
                     <li><a class="navMenu" id="home" href="">INICIO</a></li>
                     <li><a class="navMenu" id="programacion" href= ""> PROGRAMACION</a></li>
                     <li><a class="navMenu" id="miFarmacia"  href="">MI FARMACIA</a></li>
-                    <li><a class="navMenu" id="antros" href="">ANTROS REST & BAR</a></li>
                     <li><a class="navMenu" id="podcast" href="">PODCAST</a></li>
                     <li><a class="navMenu" id="musica" href="">MUSICA</a></li>
                     <li><a class="navMenu" id="contacto" href="">CONTAKTANOS</a></li>
@@ -67,6 +66,7 @@
 
         <div class="overlay-cont" id="overlay-content">
             <div id="ytplayer"></div>
+            <div id="nota-overlay"></div>
         </div>
     </div>
 <footer>
@@ -79,7 +79,7 @@
     <script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script></head>
     <script type="text/Javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
-    <script type="text/javascript" src="js/jquery.pikachoose.min.js"></script>
+    <script type="text/javascript" src="js/jquery.pikachoose.js"></script>
     <script type="text/javascript" src="js/jquery.touchwipe.min.js"></script>
     <script language="javascript" type="text/javascript" src="http://radio.inimusic.com/system/streaminfo.js"></script>
     <script language="javascript">

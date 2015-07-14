@@ -49,7 +49,12 @@ class Templates extends CI_Controller {
 	public function noticias()
 	{
 		$notaID = $this->input->post('idNota');
-		$data	= $this->conektado->getNote($notaID);
+		if($notaID != ""){
+			$data['noticia']	= $this->conektado->getNote($notaID);
+			
+		}else{
+			$data = null;
+		}
 
 		if(!is_null($data)){
 

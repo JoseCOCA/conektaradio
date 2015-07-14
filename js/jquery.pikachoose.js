@@ -571,6 +571,7 @@
 			this.image.attr('src',data.source);
 			this.image.attr('alt',data.imageAlt);
 			this.image.attr('title',data.imageTitle);
+			this.image.attr('class', 'notas');
 			this.image.css({left:"0"});
 			this.image.show();
 			var self = this;

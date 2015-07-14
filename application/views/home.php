@@ -1,6 +1,15 @@
     <section class="Principal">
 	    <aside class="bPat">
-	    	<div id="topBan"><img src="images/banners/MiFarmacia.png" alt=""></div>
+	    	<div id="topBan">
+	    	<ul id="banner-slider">
+	    		<li>
+			    	<img src="images/banners/MiFarmacia.png" alt="">
+	    		</li>
+	    		<li>
+			    	<a target="_blank" href="http://facebook.com/amarantoband"><img src="images/Banner_amaranto.jpg" alt=""></a>
+	    		</li>
+	    	</ul>
+	    	</div>
 	    </aside>
 	    <section class="programacion">
 	    	<div id="headProg"><img src="images/progsHead.png" alt=""></div>
@@ -28,7 +37,7 @@
 	    				$imagenes = $value->imagenes;
 	    			?>
 
-					<li class="notas" id="<?= $idNota ?>">
+					<li id="<?= $idNota ?>" >
 					<a href="#overlay"><img src="<?php echo $imgPrincipal; ?>"/><span>CONEKTARADIO PRESENTE ... </span></a>
 					</li>
 
