@@ -129,10 +129,9 @@ jQuery(document).on('ready', function($){
     });
 
     $("#pikame").PikaChoose({
-
         //animationFinished : getCurrentImage,
-
     });
+    $('#banners').PikaChoose({});
     $("#banner-slider").PikaChoose({});
 
     $('.notas').click(function(event) {
@@ -302,8 +301,8 @@ jQuery(document).on('ready', function($){
     $("#jquery_jplayer_1").jPlayer({
     ready: function () {
       $(this).jPlayer("setMedia", {
-        mp3: "http://radio.inimusic.com:7174/;stream.mp3",
-         // oga: "audio/TEDxPhoenix-KelliAnderson-DisruptiveWonderforaChange.ogg"
+        mp3: "http://95.211.115.197:8008/stream",
+        oga: "http://95.211.115.197:8008/stream"
       }).jPlayer("play");
     },
     swfPath: "js/",

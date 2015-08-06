@@ -1,14 +1,11 @@
     <section class="Principal">
 	    <aside class="bPat">
 	    	<div id="topBan">
-	    	<ul id="banner-slider">
-	    		<li>
-			    	<img src="images/banners/MiFarmacia.png" alt="">
-	    		</li>
-	    		<li>
-			    	<a target="_blank" href="http://facebook.com/amarantoband"><img src="images/Banner_amaranto.jpg" alt=""></a>
-	    		</li>
-	    	</ul>
+	    		<ul id="banners" class="oculto">
+	    			<li><a href="#"><img src="images/banners/MiFarmacia.png" alt=""></a></li>
+	    			<li><a href=""><img src="images/banners/MonyMarko.jpg" alt=""></a></li>
+	    		</ul>
+			    	
 	    	</div>
 	    </aside>
 	    <section class="programacion">

@@ -3,10 +3,9 @@
          
         <div id="jp_container_1" class="jp-audio">
           <div class="jp-type-single">
-            
             <div class="audioInfo">
                 <img style="width:100%; margin-bottom:10px" src="images/playerHeader.png" alt="">
-                <a href="http://radio.inimusic.com/tunein/radioumbral.pls" id="cc_strinfo_song_radioumbral" class="cc_streaminfo">Cargando ...</a>
+                <a href="http://95.211.115.197/tunein.php/conektaradio/tunein.pls" id="cc_stream_info_song">Cargando ...</a><br />
             </div>
 
             <div class="jp-gui jp-interface">

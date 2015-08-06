@@ -35,9 +35,7 @@
     <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
 <body>
     <header>
-        <a href="#" id="radio">
             <img class="headerImg" src="images/head.jpg" alt="">
-        </a>
 
         <div id="menu">
             <nav>
@@ -81,7 +79,8 @@
     <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
     <script type="text/javascript" src="js/jquery.pikachoose.js"></script>
     <script type="text/javascript" src="js/jquery.touchwipe.min.js"></script>
-    <script language="javascript" type="text/javascript" src="http://radio.inimusic.com/system/streaminfo.js"></script>
+    <script language="javascript" type="text/javascript" src="http://95.211.115.197/system/streaminfo.js"></script>
+    <script language="javascript" type="text/javascript" src="http://95.211.115.197/js.php/conektaradio/streaminfo/rnd0"></script>
     <script language="javascript">
         window.onload = date_time('date_time');
         !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
