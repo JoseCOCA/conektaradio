@@ -1,0 +1,21 @@
+{
+  "name": "conektaradio",
+  "version": "0.0.0",
+  "homepage": "https://github.com/JoseCOCA/conektaradio",
+  "authors": [
+    "joseCOCA <josecoca0890@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0",
+    "paper-button": "PolymerElements/paper-button#~1.0.3",
+    "paper-elements": "PolymerElements/paper-elements#~1.0.3"
+  }
+}

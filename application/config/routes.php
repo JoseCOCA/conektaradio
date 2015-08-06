@@ -40,6 +40,7 @@
 
 $route['default_controller'] = "templates";
 $route['example'] = "templates/example";
+$route['login'] = 'admin/login';
 
 $route['404_override'] = '';
 
